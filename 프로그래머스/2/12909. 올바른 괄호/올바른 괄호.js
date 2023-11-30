@@ -6,23 +6,21 @@
 // - 시작은 ( , 끝은 ) 
 // - (은 -1이고 )은 +1로 계산해서 최종 0이 되는지 검증
 
-s = "(())()"
-// s = "(()("
-
 function solution(s) {     
     let result = 0; 
     if(s[0] !== '(') {
        return false;
     } 
-    for (let char of s) {      
-       if(char === '(') {
-           result-- ;
-       } else {
-           result++ ;  
-           if (result > 0) {
-               return false;
-           }
-       }
+    for (let char of s) { 
+        // 0 또는 음수만 가능 
+        if(char === '(') {
+            result-- ;
+        } else {
+            result++ ;  
+            if (result > 0) {
+                return false;
+            }
+        }
     }      
     return result === 0 ;  
 }
