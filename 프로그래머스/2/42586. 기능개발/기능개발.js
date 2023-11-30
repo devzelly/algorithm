@@ -1,5 +1,10 @@
-// 스택 Stack(LIFO) : array.push, array.pop
-// 큐  Queue(FIFO) : array.push, array.shift
+// 스택/큐
+// - 스택 Stack(LIFO) : array.push, array.pop
+// - 큐 Queue(FIFO) : array.push, array.shift
+// 풀이 
+// - remain 작업기간 계산
+// - remain에서 array.shift로 하나씩 빼면서 기준값보다 작은 수들을 합산
+// - answer에 합산 반영
 
 // progresses = [93, 30, 55]
 // speeds = [1, 30, 5]
