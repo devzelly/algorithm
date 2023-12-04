@@ -1,5 +1,4 @@
 // 해시
-
 clothes = [
 	["yellow_hat", "headgear"],
 	["blue_sunglasses", "eyewear"],
@@ -32,5 +31,3 @@ function solution(clothes) {
 
 	return mul - 1; // 전체 미착용인 경우 제외
 }
-
-console.log(solution(clothes));
