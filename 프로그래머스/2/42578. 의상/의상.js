@@ -25,10 +25,12 @@ function solution(clothes) {
 
 	// 경우의 수
 	for (let type in clothesHash) {
-		mul *= clothesHash[type] + 1; // 3 * 2 = 6
+        // 미착용인 경우 더함
+        // 3 * 2 = 6
+		mul *= clothesHash[type] + 1; 
 	}
 
-	return mul - 1; // 미착용인 경우 제외
+	return mul - 1; // 전체 미착용인 경우 제외
 }
 
 console.log(solution(clothes));
